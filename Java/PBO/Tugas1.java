@@ -175,7 +175,6 @@ public class Tugas1 {
         
         int a = input.nextInt(), b = input.nextInt(), c = input.nextInt(), T = input.nextInt(), fill, countSize;
         input.close();
-
         int[] one = new int[T + 1], two = new int[T + 1], three = new int[T + 1];
         String count[] = new String[T * 10], first, second, third;
 
