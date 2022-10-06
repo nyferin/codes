@@ -1,3 +1,4 @@
+// Some assignments
 import java.util.Scanner; // Nomor 1 - 5
 // import java.lang.Math; // Nomor 2 - 3
 import java.lang.String; // Nomor 5

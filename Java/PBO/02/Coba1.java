@@ -1,4 +1,5 @@
-public class Code1 {
+// Operator
+public class Coba1 {
         public static void main(String[] args) {
             int x = 74;
 

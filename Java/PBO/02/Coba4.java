@@ -1,3 +1,4 @@
+// Print odd numbers
 public class Coba4 {
     public static void main(String[] args) {
         for (int i = 99; i > 0; i -= 2) {

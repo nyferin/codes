@@ -1,3 +1,4 @@
+// Method with data type
 public class DataMahasiswa {
     public String nama, nim, jk;
     

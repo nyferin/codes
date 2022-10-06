@@ -1,3 +1,4 @@
+// Exception
 public class Coba5 {
     public static void main(String[] args) {
         try {

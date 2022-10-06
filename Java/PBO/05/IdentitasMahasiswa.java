@@ -1,3 +1,4 @@
+// Student data with OOP
 import java.util.Scanner;
 
 public class IdentitasMahasiswa {

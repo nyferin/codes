@@ -1,4 +1,6 @@
-public class kalkulator {
+// Calculator with OOP
+
+public class Calculator {
     // ATTRIBUTE
     public int angka1, angka2; 
 

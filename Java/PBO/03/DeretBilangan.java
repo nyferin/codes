@@ -1,3 +1,4 @@
+// Numbers
 public class DeretBilangan {
     public int N, bawah = 0, atas = 10;
 

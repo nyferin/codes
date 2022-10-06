@@ -1,4 +1,5 @@
-public class Code3 {
+// Odd number from 99
+public class Coba3 {
     public static void main(String[] args) {
         /* int x = 99;
 

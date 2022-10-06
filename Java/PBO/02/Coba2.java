@@ -1,5 +1,5 @@
-
-public class Code2 {
+// Operator Odd or Even
+public class Coba2 {
     public static void main(String[] args) {
         int x = 0, check;
 

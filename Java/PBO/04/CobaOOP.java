@@ -1,8 +1,9 @@
+// Calculator with OOP
 import java.util.Scanner;
 
 public class CobaOOP {
     public static void main(String[] args) {
-        kalkulator hitungan = new kalkulator();
+        Calculator hitungan = new Calculator();
         Scanner input = new Scanner(System.in);
 
         hitungan.angka1 = input.nextInt();
