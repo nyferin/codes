@@ -1,5 +1,5 @@
 // Method with data type
-public class CobaOOPLagi {
+public class MenuMakanan {
     public static void main(String[] args) {
         Makanan listMakanan = new Makanan();
 

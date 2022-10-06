@@ -1,7 +1,7 @@
 // Method with data type
 import java.util.Scanner;
 
-public class CobaOOPLagi2 {
+public class DataMahasiswa {
     public static void main(String[] args) {
         NilaiMahasiswa dt = new NilaiMahasiswa();
 
