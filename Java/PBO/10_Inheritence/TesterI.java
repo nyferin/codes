@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Tester {
+public class TesterI {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -11,8 +11,8 @@ public class Tester {
         jumlah = in.nextInt();
         in.nextLine();
 
-        Anjing a[] = new Anjing[jumlah];
-        Kucing k[] = new Kucing[jumlah];
+        AnjingI a[] = new AnjingI[jumlah];
+        KucingI k[] = new KucingI[jumlah];
 
         while (count < jumlah) {
             System.out.print("\nJenis binatang (Anjing/Kucing): ");
@@ -22,7 +22,7 @@ public class Tester {
                 case "anjing":
                 case "a":
                 case "A":
-                    a[count] = new Anjing();
+                    a[count] = new AnjingI();
                     a[count].setKodeBinatang("A", an);
                     System.out.print("\nIDENTITAS BINATANG\n\n");
                     System.out.print("Nama binatang: ");
@@ -42,7 +42,7 @@ public class Tester {
                 case "kucing":
                 case "k":
                 case "K":
-                    k[count] = new Kucing();
+                    k[count] = new KucingI();
                     k[count].setKodeBinatang("K", ku);
                     System.out.print("\nIDENTITAS BINATANG\n\n");
                     System.out.print("Nama binatang: ");
@@ -85,22 +85,32 @@ public class Tester {
                     System.out.print("\nMasukkan identitas (kode/nama/pemilik): ");
                     data = in.nextLine();
                     for (int i = 0; i < jumlah; i++) {
-                        if (a[i] != null && (a[i].getKodeBinatang().equalsIgnoreCase(data)
-                                || a[i].getNama().equalsIgnoreCase(data)
-                                || a[i].getPemilik().equalsIgnoreCase(data))) {
-                            System.out.print("\nKODE\t|NAMA\t|PEMILIK\t|KECEPATAN\n");
-                            System.out.println(a[i].getKodeBinatang() + "\t|" + a[i].getNama() + "\t|" + a[i].getPemilik() + "\t\t|" + a[i].getKecepatan());
-                            a[i].menggonggong(a[i].getNama());
-                            break;
-                        } else if (k[i] != null && (k[i].getKodeBinatang().equalsIgnoreCase(data)
-                                || k[i].getNama().equalsIgnoreCase(data)
-                                || k[i].getPemilik().equalsIgnoreCase(data))) {
-                            System.out.print("\nKODE\t|NAMA\t|PEMILIK\t|BERAT\n");
-                            System.out.println(k[i].getKodeBinatang() + "\t|" + k[i].getNama() + "\t|" + k[i].getPemilik() + "\t\t|" + k[i].getBerat());
-                            k[i].mengeong(k[i].getNama());
-                            break;
-                        } else if (i == (jumlah - 1)){
-                            System.out.print("\nIdentitas binatang yang anda cari tidak ada...\nTekan ENTER untuk melanjutkan...");
+
+                        if (a[i] != null) {
+                            boolean isCorrectAnjing = a[i].getKodeBinatang().equalsIgnoreCase(data)
+                                    || a[i].getNama().equalsIgnoreCase(data)
+                                    || a[i].getPemilik().equalsIgnoreCase(data);
+                            if (isCorrectAnjing) {
+                                System.out.print("\nKODE\t|NAMA\t|PEMILIK\t|KECEPATAN\n");
+                                System.out.println(a[i].getKodeBinatang() + "\t|" + a[i].getNama() + "\t|"
+                                        + a[i].getPemilik() + "\t\t|" + a[i].getKecepatan());
+                                a[i].menggonggong(a[i].getNama());
+                                break;
+                            }
+                        } else if (k[i] != null) {
+                            boolean isCorrectKucing = k[i].getKodeBinatang().equalsIgnoreCase(data)
+                                    || k[i].getNama().equalsIgnoreCase(data)
+                                    || k[i].getPemilik().equalsIgnoreCase(data);
+                            if (isCorrectKucing) {
+                                System.out.print("\nKODE\t|NAMA\t|PEMILIK\t|BERAT\n");
+                                System.out.println(k[i].getKodeBinatang() + "\t|" + k[i].getNama() + "\t|"
+                                        + k[i].getPemilik() + "\t\t|" + k[i].getBerat());
+                                k[i].mengeong(k[i].getNama());
+                                break;
+                            }
+                        } else if (i == (jumlah - 1)) {
+                            System.out.print(
+                                    "\nIdentitas binatang yang anda cari tidak ada...\nTekan ENTER untuk melanjutkan...");
                             in.nextLine();
                             break;
                         }

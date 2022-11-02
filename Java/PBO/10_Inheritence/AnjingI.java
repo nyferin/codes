@@ -1,4 +1,4 @@
-public class Anjing extends Binatang {
+public class AnjingI extends BinatangI {
     private int kecepatan;
 
     public void setKecepatan(int a) {

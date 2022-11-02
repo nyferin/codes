@@ -1,4 +1,4 @@
-public class Kucing extends Binatang {
+public class KucingI extends BinatangI {
     private int berat;
 
     public void setBerat(int n) {

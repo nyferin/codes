@@ -1,4 +1,4 @@
-public class Binatang {
+public class BinatangI {
     private String kodeBinatang, nama, pemilik;
     public int usia, berat;
 
