@@ -13,6 +13,7 @@ public class TesterP {
         k.cetakBiodata();
         System.out.println("================");
 
+        // Polymorphism:
         b = k;
         System.out.println(b.nama);
 
